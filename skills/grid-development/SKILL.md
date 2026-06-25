@@ -71,9 +71,10 @@ Golden rules (the things that break first)
    `Model.fromXLSX(arrayBuffer, filename)` and `workbook.toXLSX("arraybuffer")`.
 
 5. **All three packages are ESM-only** (`"type": "module"`). Use `import`, not `require`. The
-   engine and viewer dist bundles are self-contained (no runtime dependencies to install
-   alongside), but the **editor has peer dependencies** your project must provide: `react` and
-   `react-dom` (version 18 or later) and `@grid-is/spreadsheet-engine`.
+   **engine** dist bundle is self-contained (no runtime dependencies to install alongside). The
+   **viewer and editor are React components** and need `react` and `react-dom` (version 18 or
+   later) as peer dependencies your project must provide; the **editor additionally peer-depends on
+   `@grid-is/spreadsheet-engine`**.
 
 6. **Import the component stylesheet.** Without it the app works but the formula bar is unstyled
    and there are other visual bugs. The correct import path (using the package's declared `exports`

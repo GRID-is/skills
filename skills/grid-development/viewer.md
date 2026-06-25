@@ -5,7 +5,8 @@ A React component that renders a `Model` from `@grid-is/spreadsheet-engine` in a
 viewer: grid, sheet tabs, formula bar, keyboard navigation, selection. It is a *viewer*: users
 browse and select; cell editing is done programmatically through the engine.
 
-The dist bundle is self-contained ESM (React runtime included; nothing extra to install).
+The dist bundle is ESM, but React is **not** bundled: your project must provide `react` and
+`react-dom` (version 18 or later) as peer dependencies.
 
 Basic usage
 -----------

@@ -7,9 +7,9 @@ type values and formulas, format cells, fill, paste, clear, insert/delete/move r
 resize rows and columns, and add/delete/rename sheets. For read-only browsing, use
 `@grid-is/spreadsheet-viewer` instead.
 
-Unlike the engine and viewer, the editor's dist bundle is **not self-contained**. It has three peer
-dependencies your project must provide: `react` and `react-dom` (version 18 or later), and
-`@grid-is/spreadsheet-engine`.
+Unlike the engine (self-contained) and the viewer (which needs only `react` and `react-dom`), the
+editor's dist bundle has **three** peer dependencies your project must provide: `react` and
+`react-dom` (version 18 or later), and `@grid-is/spreadsheet-engine`.
 
 Basic usage
 -----------
