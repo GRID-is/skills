@@ -1,0 +1,18 @@
+{
+  "name": "agent-tools",
+  "version": "0.1.0",
+  "description": "GRID spreadsheet tools for Claude Code — load, read, edit, and recalculate .xlsx workbooks via the @grid-is/agent-tools MCP server.",
+  "author": {
+    "name": "GRID",
+    "url": "https://grid.is"
+  },
+  "homepage": "https://docs.grid.is/agent-tools",
+  "keywords": ["spreadsheet", "xlsx", "excel", "grid", "mcp"],
+  "mcpServers": {
+    "grid": {
+      "command": "npx",
+      "args": ["-y", "@grid-is/agent-tools"]
+    }
+  },
+  "skills": "./skills/"
+}

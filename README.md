@@ -31,3 +31,21 @@ cp -R skills/grid-development ~/.codex/skills/
 mkdir -p ~/.cursor/skills
 cp -R skills/grid-development ~/.cursor/skills/
 ```
+
+Agent Tools plugin
+------------------
+
+The skill above teaches agents to *build* with GRID's packages. For agents to
+*use* spreadsheets — load, read, edit, and recalculate `.xlsx` files — this repo
+also ships an `agent-tools` plugin: the
+[`@grid-is/agent-tools`](https://docs.grid.is/agent-tools) MCP server bundled
+with a `spreadsheet` skill. The MCP server itself works with any MCP-capable
+harness; see the [agent-tools docs](https://docs.grid.is/agent-tools) for
+running it standalone.
+
+To install the plugin in Claude Code:
+
+``` sh
+claude plugin marketplace add GRID-is/skills
+claude plugin install agent-tools@grid
+```
