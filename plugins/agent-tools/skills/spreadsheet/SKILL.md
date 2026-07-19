@@ -81,7 +81,8 @@ Reference types in formulas:
 
 ### Values
 
-- Booleans: write as strings `"TRUE"` / `"FALSE"`
+- Booleans: write JSON `true` / `false` — the strings `"TRUE"` / `"FALSE"`
+  produce text cells
 - Empty/zero are different: `0` ≠ `""` ≠ `"-"` ≠ `null` ≠ `#N/A`
 - Percentages: write as decimals (`1.83` for 183%)
 
