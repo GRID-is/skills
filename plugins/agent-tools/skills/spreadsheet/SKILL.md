@@ -81,8 +81,7 @@ Reference types in formulas:
 
 ### Values
 
-- Booleans: write JSON `true` / `false` — the strings `"TRUE"` / `"FALSE"`
-  produce text cells
+- Booleans: write JSON `true` / `false` — the strings `"TRUE"` / `"FALSE"` produce text cells
 - Empty/zero are different: `0` ≠ `""` ≠ `"-"` ≠ `null` ≠ `#N/A`
 - Percentages: write as decimals (`1.83` for 183%)
 
@@ -97,6 +96,4 @@ Reference types in formulas:
 
 For deeper guidance on specific topics, read these files:
 
-- [Debugging Spreadsheets](references/debugging-spreadsheets.md) — trace errors
-  through the dependency graph, assess impact before edits, identify circular
-  references
+- [Debugging Spreadsheets](references/debugging-spreadsheets.md) — trace errors through the dependency graph, assess impact before edits, identify circular references
