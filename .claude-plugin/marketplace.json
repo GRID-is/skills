@@ -1,0 +1,17 @@
+{
+  "name": "grid",
+  "description": "GRID spreadsheet tools for Claude Code.",
+  "owner": {
+    "name": "GRID",
+    "url": "https://grid.is"
+  },
+  "plugins": [
+    {
+      "name": "agent-tools",
+      "description": "Load, read, edit, and recalculate .xlsx workbooks via the @grid-is/agent-tools MCP server.",
+      "source": "./plugins/agent-tools",
+      "version": "0.1.0",
+      "keywords": ["spreadsheet", "xlsx", "excel", "grid", "mcp"]
+    }
+  ]
+}
