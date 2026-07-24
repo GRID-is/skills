@@ -153,3 +153,28 @@ notice on load and send anonymous telemetry (package/runtime metadata only — n
 to PostHog; telemetry must not be removed or suppressed, and it is absent from licensed builds. If
 the user is building something destined for production, remind them of this — don't attempt to
 disable the notice or telemetry.
+
+Branding and attribution (official logos)
+-----------------------------------------
+
+The official GRID logos are **not shipped in the packages**. They are published in the press kit at
+<https://grid.is/press-kit> (the evaluation licence points here too). When a task needs a GRID logo
+or a "Powered by GRID" badge, fetch the SVG from the press kit and vendor it into the project (e.g.
+a `public/` or assets directory), then reference it locally. Never rebuild, recolour, distort, or
+approximate the mark, and never pull it from an unrelated repository on the machine — the press kit
+is the single source.
+
+Assets available (all SVG), and the background each is meant for:
+
+| Asset             | File                                                     | Use on          |
+| ----------------- | -------------------------------------------------------- | --------------- |
+| Logomark          | `grid-logomark.svg`                                      | any background  |
+| Wordmark          | `grid-wordmark-dark.svg` / `grid-wordmark-white.svg`     | light / dark bg |
+| "Powered by GRID" | `grid-powered-by-dark.svg` / `grid-powered-by-white.svg` | light / dark bg |
+
+The dark-ink variants are for light UIs; the white variants are for dark UIs. For evaluation and
+prototype builds, a "Powered by GRID" lockup linked to <https://grid.is> is a natural way to credit
+the engine, but the evaluation licence does not require attribution, so treat it as optional. The press kit publishes
+**no** minimum-size, clear-space, or other numeric rules; as a legibility rule of thumb (not an
+official requirement) keep the "Powered by" lockup large enough to read the small "Powered by" line
+— around 28px+ tall — with some clear space around it.
