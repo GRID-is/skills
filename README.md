@@ -49,3 +49,10 @@ To install the plugin in Claude Code:
 claude plugin marketplace add GRID-is/skills
 claude plugin install agent-tools@grid
 ```
+
+To install the plugin in Codex:
+
+``` sh
+codex plugin marketplace add GRID-is/skills
+codex plugin add agent-tools@grid
+```

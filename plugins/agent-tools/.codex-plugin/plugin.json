@@ -1,0 +1,26 @@
+{
+  "name": "agent-tools",
+  "version": "0.1.0",
+  "description": "GRID spreadsheet tools for Codex - create, load, read, edit, and recalculate .xlsx workbooks via the @grid-is/agent-tools MCP server.",
+  "author": {
+    "name": "GRID",
+    "url": "https://grid.is"
+  },
+  "homepage": "https://docs.grid.is/agent-tools",
+  "repository": "https://github.com/GRID-is/skills",
+  "keywords": ["spreadsheet", "xlsx", "excel", "grid", "mcp"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GRID Agent Tools",
+    "shortDescription": "Create, load, inspect, edit, and recalculate spreadsheets",
+    "longDescription": "Use GRID Agent Tools to create, load, inspect, edit, and recalculate .xlsx workbooks through an MCP server, with a bundled spreadsheet skill for reliable workbook workflows.",
+    "developerName": "GRID",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "websiteURL": "https://grid.is",
+    "defaultPrompt": [
+      "Create, load, inspect, edit, and recalculate an .xlsx workbook with GRID Agent Tools."
+    ]
+  }
+}

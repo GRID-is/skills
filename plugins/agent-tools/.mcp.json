@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "grid": {
+      "command": "npx",
+      "args": ["-y", "@grid-is/agent-tools"]
+    }
+  }
+}
