@@ -3,7 +3,7 @@
 Claude Code and Codex plugin for [GRID's Agent Tools](https://docs.grid.is/agent-tools).
 Runs the published [`@grid-is/agent-tools`](https://www.npmjs.com/package/@grid-is/agent-tools)
 MCP server via `npx` — no build step, no bundled dependencies — and ships a
-`spreadsheet` skill that teaches agents how to use the tools well.
+`spreadsheet` skill that teaches agents how to create, inspect, edit, and recalculate workbooks.
 
 ## Install
 
