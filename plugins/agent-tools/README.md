@@ -1,9 +1,9 @@
 # agent-tools plugin
 
-Claude Code plugin for [GRID's Agent Tools](https://docs.grid.is/agent-tools).
+Claude Code and Codex plugin for [GRID's Agent Tools](https://docs.grid.is/agent-tools).
 Runs the published [`@grid-is/agent-tools`](https://www.npmjs.com/package/@grid-is/agent-tools)
 MCP server via `npx` — no build step, no bundled dependencies — and ships a
-`spreadsheet` skill that teaches Claude how to use the tools well.
+`spreadsheet` skill that teaches agents how to use the tools well.
 
 ## Install
 
@@ -14,6 +14,13 @@ claude plugin install agent-tools@grid
 
 Or from a running session: `/plugin marketplace add GRID-is/skills` then
 `/plugin install agent-tools@grid`.
+
+## Install in Codex
+
+```sh
+codex plugin marketplace add GRID-is/skills
+codex plugin add agent-tools@grid
+```
 
 ## What you get
 
